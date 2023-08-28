@@ -1,90 +1,10 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, h4, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
   
-  /* Set a background color for the whole page */
-  body {
-    background-color: #f5f5f5;
-  }
-  
-  /* Style for the navigation bar */
-  div {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  a {
-    margin-right: 20px;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  /* Style for sections */
-  .page {
+    .page {
     height: 100vh;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
   }
   
-  /* Style for section headings */
-  h4 {
-    background-color: blue;
-    color: white;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
   
-  /* Style for the Home section */
-  #Home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   
-  #Home img {
-    max-width: 100px;
-    margin-bottom: 10px;
-  }
-  
-  /* Style for the About section */
-  #About {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-  }
-  
-  #About img {
-    max-width: 50%;
-    margin-right: 20px;
-  }
-  
-  #About p {
-    flex: 1;
-    text-align: left;
-  }
-  
-  /* Style for the Contact section */
-  #Contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #Contact a img {
-    max-width: 100px;
-    margin: 0 10px;
-  }
-  
-  /* Style for the icons in the Tech Stack */
-  #Home a img,
-  #Home h4 {
-    margin: 5px;
-    max-width: 50px;
-  }
