@@ -65,3 +65,14 @@ p {
 }
 
 
+[src="photo.jpg"] {
+  border: 3px solid rgb(138, 138, 201);
+}
+
+.tech-icons, h4, p {
+  background-color: blue;
+}
+
+.tech-stack {
+  margin-bottom: 0em;
+}
