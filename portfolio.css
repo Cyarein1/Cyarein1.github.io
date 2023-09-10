@@ -1,78 +1,88 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+/*header style*/
 
 nav {
   background-color: #333;
-  text-align: center;
   padding: 10px;
+  text-align: center;
+  display: fix;
 }
 
 nav a {
+  margin: 10px;
   color: white;
   text-decoration: none;
-  margin: 10px;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
+nav a:hover {
+  color: #ff6600;
+  text-shadow: 0 0 10px rgba(255, 102, 0, 0.8);
+}
+
+section {
+  height: 100vh;
   text-align: center;
+  border-bottom: 3px solid rgb(138, 138, 201);
 }
 
-img {
-  border-radius: 50%;
-  max-width: 200px;
-  height: auto;
-  margin: 20px 0;
-}
-
-h1 {
-  font-size: 28px;
-  margin: 10px 0;
-}
-
-h4 {
-  font-size: 24px;
-  margin-top: 20px;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.tech-icons,
-.contact-icons {
-  display: flex;
-  justify-content: space-between;
-  max-width: 200px;
-  margin-top: 20px;
-}
-
-.tech-icons a img,
-.contact-icons a img {
-  max-width: 40px;
-  height: auto;
-  margin: 0 10px;
-}
-
+/*home section style*/
 
 [src="photo.jpg"] {
   border: 3px solid rgb(138, 138, 201);
+  height: 300px;
+  width: auto;
+  border-radius: 50%;
 }
 
-.tech-icons, h4, p {
-  background-color: blue;
+.tech-icons img {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-.tech-stack {
-  margin-bottom: 0em;
+/*about section style*/
+
+[alt="Desk Image"] {
+  float: left;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.picText {
+  margin-left: 220px;
+  margin-right: 100px;
+  margin-top: 80px;
+}
+
+#passage {
+  padding-right: 150px;
+  text-align: left;
+}
+
+/*footer style*/
+
+footer {
+  height: 10px;
+}
+
+footer h4 {
+  float: left;
+  margin-top: 10px;
+  padding-right: 10px;
+  border-right: 3px solid rgb(138, 138, 201);
+}
+
+.contact-icons {
+  margin-left: 80px;
+}
+
+.contact-icons img {
+  width: 30px;
+  height: 30px;
+  margin-top: 3px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2);
 }

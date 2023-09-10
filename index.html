@@ -1,45 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
     <title>My Portfolio Website</title>
-</head>
-<body>
-    <nav>
+  </head>
+  <body>
+    <header>
+      <nav>
         <a href="#Home">Home</a>
         <a href="#About">About</a>
         <a href="#Projects">Projects</a>
         <a href="#Contact">Contact</a>
-    </nav>
+      </nav>
+    </header>
     <section class="page" id="Home">
-        <img src="photo.jpg" alt="My Photo">
-        <h1>Full-Stack Developer</h1>
-        <p>Hi, I'm Siyabonga Mthethwa, a passionate full-stack developer based in Durban, South Africa.</p>
-        <h4>Tech Stack</h4>
-        <div class="tech-icons">
-            <img src="git-icon.png" alt="Git Icon">
-            <img src="html-icon.png" alt="HTML Icon">
-            <img src="css-icon.png" alt="CSS Icon">
-            <img src="js-icon.png" alt="JavaScript Icon">
+      <div class="container">
+        <div class="column">
+          <h1>Full-Stack Developer</h1>
+          <p>
+            Hi, I'm Siyabonga Mthethwa, a passionate full-stack developer based
+            in Durban, South Africa.
+          </p>
         </div>
+        <div>
+          <img src="photo.jpg" alt="My Photo" />
+        </div>
+      </div>
+      <div class="container1">
+        <div class="tech-icons">
+          <h2 class="tech-stack">Tech Stack</h2>
+        </div>
+        <div class="tech-icons">
+          <img src="git-icon.png" alt="Git Icon" />
+          <img src="html-icon.png" alt="HTML Icon" />
+          <img src="css-icon.png" alt="CSS Icon" />
+          <img src="js-icon.png" alt="JavaScript Icon" />
+        </div>
+      </div>
     </section>
     <section class="page" id="About">
-        <h4>About Me</h4>
-        <img src="desk-image.jpg.webp" alt="Desk Image">
-        <p>Hey, I'm Siyabonga Mthethwa, a 21-year-old web enthusiast from Durban, South Africa. Currently studying at Umuzi to become a skilled full-stack web developer. I'm passionate about crafting seamless online experiences. My love for technology and knack for creative problem-solving drive me to code with precision. Chess player, math lover, and future web maestro, I'm here to turn ideas into captivating digital realities. Let's build something amazing together.</p>
+      <h2>About Me</h2>
+      <div class="picText">
+        <img src="desk-image.jpg.webp" alt="Desk Image" />
+        <p id="passage">
+          Hey, I'm Siyabonga Mthethwa, a 21-year-old web enthusiast from Durban,
+          South Africa. Currently studying at Umuzi to become a skilled
+          full-stack web developer. I'm passionate about crafting seamless
+          online experiences. My love for technology and knack for creative
+          problem-solving drive me to code with precision. Chess player, math
+          lover, and future web maestro, I'm here to turn ideas into captivating
+          digital realities. <strong>let's build something amazing together</strong>.
+        </p>
+      </div>
     </section>
     <section class="page" id="Projects">
-        <h4>Projects</h4>
-        <p>Currently working on exciting projects. Check back soon!</p>
+      <h2>Projects</h2>
+      <p>Currently working on exciting projects. Check back soon!</p>
     </section>
-    <section class="page" id="Contact">
+    <footer class="page" id="Contact">
+      <div>
         <h4>Contact Me</h4>
-        <div class="contact-icons">
-            <a href="https://github.com/Cyarein1"><img src="github-icon.png" alt="GitHub Icon"></a>
-            <a href="https://www.linkedin.com/in/siyabonga-mthethwa-73476921b"><img src="linkedin-icon.png" alt="LinkedIn Icon"></a>
-        </div>
-    </section>
-</body>
+      </div>
+      <div class="contact-icons">
+        <a href="https://github.com/Cyarein1"
+          ><img src="github-icon.png" alt="GitHub Icon"
+        /></a>
+        <a href="https://www.linkedin.com/in/siyabonga-mthethwa-73476921b"
+          ><img src="linkedin-icon.png" alt="LinkedIn Icon"
+        /></a>
+      </div>
+    </footer>
+  </body>
 </html>
