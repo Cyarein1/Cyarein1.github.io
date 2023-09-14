@@ -20,9 +20,8 @@ nav a:hover {
 }
 
 section {
-  height: 100vh;
   text-align: center;
-  border-bottom: 3px solid rgb(138, 138, 201);
+  margin-bottom: 8%;
 }
 
 /*home section style*/
@@ -37,25 +36,19 @@ section {
 .tech-icons img {
   margin-right: 20px;
   margin-left: 20px;
+  transition: transform 0.3s;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.2);
 }
 
 /*about section style*/
 
-[alt="Desk Image"] {
-  float: left;
-  width: 50%;
-  margin-right: 10px;
-}
-
-.picText {
-  margin-left: 220px;
-  margin-right: 100px;
-  margin-top: 80px;
-}
-
-#passage {
-  padding-right: 150px;
+.text p {
   text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 /*footer style*/
@@ -86,3 +79,5 @@ footer h4 {
 .contact-icons img:hover {
   transform: scale(1.2);
 }
+
+
