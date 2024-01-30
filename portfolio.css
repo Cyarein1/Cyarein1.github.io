@@ -26,6 +26,14 @@ a,
 
 /*desk-top nav*/
 
+nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 nav,
 .nav-links {
   display: flex;
@@ -415,7 +423,7 @@ article .icon {
 /*footer*/
 
 footer {
-  height: 26vh;
+  height: 15vh;
   margin: 0 1rem;
 }
 
@@ -475,9 +483,11 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
+  #contact {
     height: 40vh;
+  }
+  footer {
+    height: 10vh;
   }
   #profile {
     height: 83vh;
@@ -485,10 +495,6 @@ footer p {
   }
   article {
     font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
   }
   .about-containers,
   .contact-info-upper-container,
