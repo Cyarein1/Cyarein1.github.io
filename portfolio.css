@@ -442,7 +442,8 @@ footer p {
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #projects,
+  #experience {
     height: fit-content;
   }
 }
