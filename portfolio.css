@@ -32,6 +32,7 @@ nav {
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100vw;
 }
 
 nav,
@@ -155,8 +156,8 @@ a:hover {
 /*sections*/
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 80px;
+  height: 96vh;  
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -169,6 +170,8 @@ section {
 /*profile*/
 
 #profile {
+  padding-top: 0%;
+  padding-bottom: 0%;
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -432,6 +435,15 @@ footer p {
 }
 
 /*media queries*/
+
+@media screen and (min-width: 1400px){
+  section {
+    padding-top: 200px;
+  }
+  #profile {
+    padding-top: 0%;
+  }
+}
 
 @media screen and (max-width: 1400px) {
   #profile {
