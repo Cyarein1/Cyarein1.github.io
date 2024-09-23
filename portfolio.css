@@ -331,9 +331,12 @@ section {
   margin: auto 0;
 }
 
-.experience-education p {
+.about-details-container p {
   font-size: smaller;
 }
+/* .experience-education p {
+  font-size: smaller;
+} */
 
 /*experience*/
 
@@ -401,7 +404,7 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   width: 90%;
   height: 90%;
 }
