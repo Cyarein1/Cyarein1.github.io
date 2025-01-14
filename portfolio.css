@@ -459,7 +459,7 @@ article .icon {
 /*footer*/
 
 footer {
-  height: 15vh;
+  height: fit-content;
   margin: 0 1rem;
 }
 
