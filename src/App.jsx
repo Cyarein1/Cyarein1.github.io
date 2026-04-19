@@ -317,7 +317,8 @@ function App() {
                 size="large"
                 startIcon={<PictureAsPdfOutlined />}
                 variant="contained"
-                href={portfolioData.cv}
+                href={portfolioData.cv.href}
+                download={portfolioData.cv.downloadName}
                 target="_blank"
                 rel="noreferrer"
                 className="cv-button"

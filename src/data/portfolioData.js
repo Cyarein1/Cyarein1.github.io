@@ -7,7 +7,11 @@ export const portfolioData = {
   dateOfBirth: "2001",
   profileImage: "/essentials/profile-pic.jpeg",
   aboutImage: "/essentials/about-pic.jpg",
-  cv: "/essentials/Siyabonga-Mthethwa-CV.pdf",
+  cv: {
+    // Keep the portfolio download pointed at this one canonical file.
+    href: "/essentials/Siyabonga-Mthethwa-CV.pdf",
+    downloadName: "Siyabonga-Mthethwa-CV.pdf",
+  },
   socials: [
     {
       label: "LinkedIn",
