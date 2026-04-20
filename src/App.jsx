@@ -258,33 +258,41 @@ function App() {
               <Divider flexItem sx={{ borderColor: "rgba(211, 175, 91, 0.18)" }} />
 
               <Stack spacing={2} sx={{ width: "100%" }}>
-                <Stack direction="row" spacing={2}>
+                <Stack direction="row" spacing={2} className="contact-item">
                   <Box className="icon-shell">
                     <EmailOutlined fontSize="small" />
                   </Box>
-                  <Box sx={{ minWidth: 0 }}>
+                  <Box sx={{ minWidth: 0 }} className="contact-copy">
                     <Typography className="contact-label">Email</Typography>
-                    <Link href={`mailto:${portfolioData.email}`} underline="hover">
+                    <Link
+                      href={`mailto:${portfolioData.email}`}
+                      underline="hover"
+                      className="contact-value"
+                    >
                       {portfolioData.email}
                     </Link>
                   </Box>
                 </Stack>
-                <Stack direction="row" spacing={2}>
+                <Stack direction="row" spacing={2} className="contact-item">
                   <Box className="icon-shell">
                     <PhoneOutlined fontSize="small" />
                   </Box>
-                  <Box>
+                  <Box className="contact-copy">
                     <Typography className="contact-label">Phone</Typography>
-                    <Typography color="text.secondary">{portfolioData.phone}</Typography>
+                    <Typography color="text.secondary" className="contact-value">
+                      {portfolioData.phone}
+                    </Typography>
                   </Box>
                 </Stack>
-                <Stack direction="row" spacing={2}>
+                <Stack direction="row" spacing={2} className="contact-item">
                   <Box className="icon-shell">
                     <LocationOnOutlined fontSize="small" />
                   </Box>
-                  <Box>
+                  <Box className="contact-copy">
                     <Typography className="contact-label">Location</Typography>
-                    <Typography color="text.secondary">{portfolioData.location}</Typography>
+                    <Typography color="text.secondary" className="contact-value">
+                      {portfolioData.location}
+                    </Typography>
                   </Box>
                 </Stack>
               </Stack>
@@ -334,6 +342,7 @@ function App() {
               onChange={(_, nextValue) => setTab(nextValue)}
               variant="scrollable"
               allowScrollButtonsMobile
+              className="section-tabs"
               sx={{ mb: 4 }}
             >
               {tabs.map((label) => (

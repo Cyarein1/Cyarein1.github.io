@@ -168,6 +168,20 @@ img {
   animation: softGlow 3.2s ease-in-out infinite;
 }
 
+.contact-item {
+  align-items: flex-start;
+}
+
+.contact-copy {
+  min-width: 0;
+  flex: 1;
+}
+
+.contact-value {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .icon-shell,
 .social-button,
 .project-icon-button {
@@ -421,6 +435,8 @@ img {
   font-weight: 600;
   text-decoration-color: transparent;
   text-underline-offset: 0.18em;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .contact-link-large:hover {
@@ -435,6 +451,16 @@ img {
   }
   50% {
     transform: translateY(-7px);
+  }
+}
+
+@keyframes hireBounceCentered {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-7px);
   }
 }
 
@@ -496,17 +522,127 @@ img {
 }
 
 @media (max-width: 700px) {
+  .app-shell {
+    overflow-x: clip;
+  }
+
   .opportunity-banner {
     top: 12px;
     width: calc(100% - 24px);
     text-align: center;
     font-size: 0.8rem;
+    padding: 11px 14px;
   }
 
   .hire-me-button {
-    right: 12px;
+    left: 50%;
+    right: auto;
     bottom: 12px;
-    min-width: 128px;
+    min-width: min(200px, calc(100vw - 32px));
+    transform: translateX(-50%);
+    border-radius: 999px !important;
+    animation: hireBounceCentered 2.2s ease-in-out infinite;
+  }
+
+  .sidebar-card,
+  .content-card {
+    border-radius: 22px;
+  }
+
+  .sidebar-card {
+    padding: 24px 18px;
+  }
+
+  .content-card {
+    padding: 18px 16px 24px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .section-accent {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-tabs .MuiTabs-flexContainer {
+    gap: 4px;
+  }
+
+  .section-tabs .MuiTab-root {
+    padding-left: 12px;
+    padding-right: 12px;
+    min-width: max-content;
+  }
+
+  .timeline-list {
+    margin-left: 6px;
+    padding-left: 18px;
+  }
+
+  .timeline-item::before {
+    left: -25px;
+  }
+
+  .about-image {
+    min-height: 220px;
+  }
+
+  .contact-link-large {
+    font-size: clamp(1rem, 5vw, 1.25rem);
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-card:hover,
+  .skill-group:hover,
+  .contact-link-large:hover,
+  .social-button:hover,
+  .cv-button:hover,
+  .theme-toggle:hover,
+  .project-icon-button:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-layout {
+    gap: 16px;
+  }
+
+  .sidebar-card {
+    padding: 22px 14px;
+  }
+
+  .content-card {
+    padding: 16px 14px 22px;
+  }
+
+  .icon-shell,
+  .social-button,
+  .project-icon-button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .contact-item {
+    gap: 12px !important;
+  }
+
+  .contact-link-large {
+    line-height: 1.35;
+  }
+
+  .hire-me-button {
+    min-width: calc(100vw - 24px);
+  }
+
+  .opportunity-banner {
+    width: calc(100% - 16px);
+    font-size: 0.75rem;
   }
 }
 
